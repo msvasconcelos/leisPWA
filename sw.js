@@ -1,4 +1,9 @@
-self.importScripts('data/games.js');
+self.importScripts('data/financas.js');
+self.importScripts('data/incentivos.js');
+self.importScripts('data/outros.js');
+self.importScripts('data/seguranca.js');
+self.importScripts('data/servidor.js');
+self.importScripts('data/zoneamento.js');
 
 // Files to cache
 // Arquivos para armazenar em cache
@@ -30,11 +35,11 @@ var appShellFiles = [
   '/icons/icon-256.png',
   '/icons/icon-512.png'
 ];
-var gamesImages = [];
-for(var i=0; i<games.length; i++) {
-  gamesImages.push('data/img/'+games[i].slug+'.jpg');
+var financasImages = [];
+for(var i=0; i<financas.length; i++) {
+  financasImages.push('data/img/'+financas[i].slug+'.jpg');
 }
-var contentToCache = appShellFiles.concat(gamesImages);
+var contentToCache = appShellFiles.concat(financasImages);
 
 // Installing Service Worker
 // Instalando Service Worker
